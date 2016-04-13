@@ -1,0 +1,17 @@
+allprojects {
+
+	apply plugin: 'java'
+  
+	repositories {
+		mavenLocal()
+		mavenCentral()
+	}
+
+	compileJava {
+		sourceCompatibility = '1.8'
+	}
+	
+	dependencies {
+		testCompile "junit:junit:${junitVersion}"
+	}
+}  
