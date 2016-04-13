@@ -27,4 +27,8 @@ dependencies {
     // testCompile dependency to testCompile 'org.testng:testng:6.8.1' and add
     // 'test.useTestNG()' to your build script.
     testCompile 'junit:junit:4.12'
+    compile 'org.apache.hadoop:hadoop-common:2.7.2'
+    compile 'org.apache.hadoop:hadoop-client:2.7.2'
+    compile 'org.apache.hadoop:hadoop-core:1.2.1'
+    compile 'org.apache.hadoop:hadoop-hdfs:2.7.2'
 }
