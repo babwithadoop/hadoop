@@ -1,0 +1,29 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+sourceCompatibility = 1.7
+version = '1.0'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'HADOOP practice Projects',
+                   'Implementation-Version': 1.0
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+eclipseClasspath.doFirst {
+    initSourceFolders()
+}
+
+def initSourceFolders() {
+    sourceSets*.java.srcDirs*.each { it.mkdirs() }
+    sourceSets*.resources.srcDirs*.each { it.mkdirs() }
+}
+
+dependencies {
+ 
+    
+}
